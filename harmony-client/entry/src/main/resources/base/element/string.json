@@ -1,0 +1,7 @@
+{
+  "string": [
+    { "name": "module_desc", "value": "耗材管家" },
+    { "name": "EntryAbility_desc", "value": "拍照/识别录入 3D 打印耗材" },
+    { "name": "EntryAbility_label", "value": "耗材管家" }
+  ]
+}

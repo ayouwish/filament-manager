@@ -1,0 +1,35 @@
+{
+  "name": "filament-manager",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "家庭 3D 打印耗材管理：拍照/图片识别记录 + MakerWorld 链接自动选料",
+  "scripts": {
+    "start": "node server.mjs",
+    "start:lan": "node server.mjs --lan",
+    "test": "node --test test/*.test.mjs",
+    "fixtures": "python3 tools/make_fixture_3mf.py"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "ayouwish",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ayouwish/filament-manager.git"
+  },
+  "homepage": "https://github.com/ayouwish/filament-manager#readme",
+  "bugs": {
+    "url": "https://github.com/ayouwish/filament-manager/issues"
+  },
+  "keywords": [
+    "3d-printing",
+    "filament",
+    "makerworld",
+    "bambu-lab",
+    "harmonyos",
+    "self-hosted",
+    "nas"
+  ]
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f766e" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="耗材管家" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+  <link rel="icon" href="/icons/icon-192.png" />
+  <title>耗材管家 · 家庭 3D 打印材料管理</title>
+  <link rel="stylesheet" href="/style.css?v=20261024" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">🧵</span>
+      <div>
+        <h1>耗材管家</h1>
+        <p class="sub">拍照记录 · 链接选料</p>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-view="inventory" role="tab">材料库</button>
+      <button class="tab" data-view="match" role="tab">智能选料</button>
+      <button class="tab" data-view="jobs" role="tab">打印记录</button>
+    </nav>
+    <button class="icon-btn" id="btnSettings" title="设置" aria-label="设置">⚙</button>
+  </header>
+
+  <div id="versionBanner" class="version-banner" hidden>
+    当前页面（<span id="bannerOrigin"></span>）连接的是旧版服务，没有图片识别接口。
+    <a id="bannerLink" href="http://127.0.0.1:4174">切换到新版 http://127.0.0.1:4174 →</a>
+  </div>
+
+  <main>
+    <!-- 材料库 -->
+    <section id="view-inventory" class="view">
+      <div class="summary" id="invSummary"></div>
+      <div class="toolbar">
+        <button class="primary" id="btnAdd">＋ 拍照添加耗材</button>
+        <button class="ghost" id="btnFetchImages">🖼️ 自动找商品图</button>
+        <button class="ghost" id="btnMergeDuplicates">🧩 合并同款</button>
+        <span class="hint">拍照 → 自动识别（或手动填）→ 核对入库；点图片可放大取色</span>
+      </div>
+      <div class="toolbar secondary">
+        <div class="seg" id="viewSeg">
+          <button class="seg-btn active" data-view="grid" type="button">▦ 平铺</button>
+          <button class="seg-btn" data-view="list" type="button">☰ 列表</button>
+        </div>
+        <label class="inline-select">分组
+          <select id="groupBy">
+            <option value="none">不分组</option>
+            <option value="brand">按品牌</option>
+            <option value="type">按材质</option>
+            <option value="color">按颜色</option>
+            <option value="brand+type">品牌 + 材质</option>
+          </select>
+        </label>
+        <select id="filterBrand" class="filter-select" title="按品牌筛选"></select>
+        <select id="filterType" class="filter-select" title="按材质筛选"></select>
+        <input id="searchSpools" type="search" placeholder="搜索名称 / 品牌 / 颜色 / 材质 / 备注…" />
+        <span class="hint" id="invCount"></span>
+        <span class="hint" id="imageQueueHint"></span>
+      </div>
+      <div class="spool-groups" id="spoolGrid"></div>
+      <div class="empty" id="spoolEmpty" hidden>
+        <p>还没有材料记录</p>
+        <button class="primary" id="btnAddEmpty">添加第一盘耗材</button>
+      </div>
+    </section>
+
+    <!-- 智能选料 -->
+    <section id="view-match" class="view" hidden>
+      <div class="card">
+        <h2><span class="step">1</span> 粘贴 MakerWorld 模型链接</h2>
+        <p class="hint">
+          支持 <code>makerworld.com/zh/models/…</code> 或 <code>…/en/models/…</code>。
+          如果服务器被 Cloudflare 拦截，可在 MakerWorld 点「下载打印配置」，再把 <b>.3mf</b> 拖进来，克重最准。
+        </p>
+        <div class="row">
+          <input id="mwUrl" type="url" placeholder="https://makerworld.com/zh/models/1234567" />
+          <button class="primary" id="btnResolve">解析链接</button>
+        </div>
+        <div class="row wrap">
+          <label class="file-btn ghost" for="file3mf">📄 上传打印配置 .3mf</label>
+          <input id="file3mf" type="file" accept=".3mf,application/octet-stream" hidden />
+          <button class="ghost" id="btnSample">🧪 试用示例模型</button>
+          <button class="ghost" id="btnManual">✏️ 手动录入需求</button>
+        </div>
+        <div id="resolveStatus" class="status" hidden></div>
+      </div>
+
+      <div class="card" id="modelCard" hidden>
+        <div class="model-head">
+          <img id="modelCover" class="model-cover" alt="" hidden />
+          <div>
+            <h2 id="modelTitle">模型</h2>
+            <p class="hint" id="modelSource"></p>
+          </div>
+          <span class="badge" id="modelBadge"></span>
+        </div>
+        <div id="plateChips" class="chips" hidden></div>
+        <div id="modelWarnings" class="warnings" hidden></div>
+        <div class="req-head">
+          <h3>材料需求</h3>
+          <button class="link-btn" id="btnEditReqs">编辑</button>
+        </div>
+        <div id="reqView" class="req-table"></div>
+        <div id="reqEdit" class="req-edit" hidden></div>
+        <div class="row end">
+          <button class="primary" id="btnMatch">自动匹配库存 →</button>
+        </div>
+      </div>
+
+      <div class="card" id="matchCard" hidden>
+        <h2><span class="step">2</span> 匹配结果</h2>
+        <div id="matchSummary" class="match-summary"></div>
+        <div id="matchList" class="match-list"></div>
+        <div class="row end">
+          <span class="hint" id="confirmHint"></span>
+          <button class="primary" id="btnConfirm">确认并扣减余量</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 打印记录 -->
+    <section id="view-jobs" class="view" hidden>
+      <div class="toolbar">
+        <h2>打印记录</h2>
+        <span class="hint" id="jobsHint"></span>
+      </div>
+      <div id="jobList" class="job-list"></div>
+      <div class="empty" id="jobsEmpty" hidden><p>还没有打印记录。选料确认后会出现在这里。</p></div>
+    </section>
+  </main>
+
+  <!-- 添加/编辑材料 -->
+  <div class="modal" id="modalSpool" hidden>
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="spoolModalTitle">添加耗材</h2>
+        <button class="icon-btn" data-close="modalSpool" aria-label="关闭">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="photo-area">
+          <div class="photo-preview" id="photoPreview">
+            <span class="photo-placeholder">📷 拍照或选择料盘照片</span>
+            <img id="editPhotoImg" alt="料盘照片" hidden />
+          </div>
+          <div class="photo-actions">
+            <label class="file-btn primary" for="photoInput">📷 拍照 / 选图</label>
+            <input id="photoInput" type="file" accept="image/*" capture="environment" hidden />
+            <button class="ghost" id="btnAutoFillFromPhoto" type="button">🤖 自动识别并填表</button>
+            <button class="ghost" id="btnClearPhoto" type="button">清除照片</button>
+            <p class="hint">照片加载后，<b>点击照片可放大</b>；在放大图上点一下即可取色填入颜色。</p>
+          </div>
+        </div>
+        <form id="spoolForm" class="form-grid" autocomplete="off">
+          <input type="hidden" name="id" />
+          <label>名称
+            <input name="name" placeholder="例如：黑武士 PLA" />
+          </label>
+          <label>品牌
+            <input name="brand" placeholder="Bambu Lab / eSun / …" list="brandList" />
+            <datalist id="brandList">
+              <option value="Bambu Lab"></option><option value="eSun"></option>
+              <option value="Polymaker"></option><option value="JAYO"></option>
+              <option value="Kingroon"></option><option value="其他"></option>
+            </datalist>
+          </label>
+          <label>材料类型
+            <select name="type">
+              <option>PLA</option><option>PETG</option><option>ABS</option><option>ASA</option>
+              <option>TPU</option><option>PA</option><option>PC</option><option>其他</option>
+            </select>
+          </label>
+          <label>颜色
+            <span class="color-field">
+              <input type="color" name="colorHex" value="#808080" />
+              <input name="colorHexText" class="mono" value="#808080" maxlength="7" />
+            </span>
+          </label>
+          <label>总重 (g)
+            <input type="number" name="totalGrams" min="0" step="10" value="1000" />
+          </label>
+          <label>剩余 (g)
+            <input type="number" name="remainingGrams" min="0" step="1" value="1000" />
+          </label>
+          <label class="span-2">备注
+            <input name="note" placeholder="购买日期、价格、烘干情况…" />
+          </label>
+        </form>
+      </div>
+      <div class="modal-foot">
+        <button class="ghost" data-close="modalSpool">取消</button>
+        <button class="primary" id="btnSaveSpool">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 添加耗材（拍照/识别/手动 三合一） -->
+  <div class="modal" id="modalAdd" hidden>
+    <div class="modal-card wide">
+      <div class="modal-head">
+        <h2>拍照添加耗材</h2>
+        <button class="icon-btn" data-close="modalAdd" aria-label="关闭">✕</button>
+      </div>
+      <div class="modal-body">
+        <p class="hint">拍料盘或整箱标签：能识别就自动填好品牌/材料/颜色/SKU/克重；识别不了就手动填。结果核对后一起入库。</p>
+        <div class="row wrap">
+          <label class="file-btn primary" for="addPhotoInput">📷 拍照 / 选图</label>
+          <input id="addPhotoInput" type="file" accept="image/*" capture="environment" hidden />
+          <button class="primary" id="btnRunRecognize" disabled>🤖 识别照片</button>
+          <button class="ghost" id="btnAddManualItem">＋ 手动添加一行</button>
+          <span class="hint" id="recognizeEngineHint"></span>
+        </div>
+        <div id="photoWrap" class="recognize-preview" hidden>
+          <img id="addPhotoImg" alt="待识别照片" title="点击放大 / 放大后可点图取色" />
+          <button class="zoom-btn" id="btnZoomPhoto" type="button">🔍 放大 / 取色</button>
+        </div>
+        <div id="addStatus" class="status" hidden></div>
+        <div id="addItems" class="recognize-results"></div>
+      </div>
+      <div class="modal-foot">
+        <label class="inline-check"><input type="checkbox" id="splitCount" /> 同款多盒拆成多盘</label>
+        <span class="hint" id="addSummary"></span>
+        <button class="ghost" data-close="modalAdd">取消</button>
+        <button class="primary" id="btnSaveItems">加入材料库</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 图片放大 / 取色 -->
+  <div class="lightbox" id="photoLightbox" hidden>
+    <div class="lightbox-bar">
+      <span class="hint" id="lightboxHint">点击图片取色 · 滚轮/按钮缩放 · 拖动平移</span>
+      <button class="ghost" data-lb="zoomout" type="button">−</button>
+      <button class="ghost" data-lb="zoomin" type="button">＋</button>
+      <button class="ghost" data-lb="reset" type="button">1:1</button>
+      <button class="primary" data-lb="close" type="button">✕ 关闭</button>
+    </div>
+    <div class="lightbox-stage" id="lightboxStage">
+      <img id="lightboxImg" alt="放大查看" />
+    </div>
+  </div>
+
+  <!-- 设置 -->
+  <div class="modal" id="modalSettings" hidden>
+    <div class="modal-card narrow">
+      <div class="modal-head">
+        <h2>匹配设置</h2>
+        <button class="icon-btn" data-close="modalSettings" aria-label="关闭">✕</button>
+      </div>
+      <div class="modal-body form-grid">
+        <label class="span-2">可接受色差上限 ΔE：<b id="maxDeltaELabel">12</b>
+          <input type="range" id="setMaxDeltaE" min="4" max="30" step="1" value="12" />
+          <span class="hint">ΔE ≤ 5 肉眼几乎同色；&gt; 10 通常能明显看出色差，不建议自动选中。</span>
+        </label>
+        <label class="span-2">同色判定 ΔE：<b id="goodDeltaELabel">5</b>
+          <input type="range" id="setGoodDeltaE" min="2" max="20" step="1" value="5" />
+        </label>
+        <label class="span-2 inline">
+          <input type="checkbox" id="setAllowTypeMismatch" /> 允许用不同类型耗材顶替（默认关闭）
+        </label>
+        <label class="span-2 inline">
+          <input type="checkbox" id="setPreferOpened" /> 优先消耗已开封 / 剩余较少的料盘
+        </label>
+        <hr class="span-2" />
+        <h3 class="span-2" style="font-size:15px">📱 手机拍照录入</h3>
+        <label class="span-2">手机访问地址
+          <span class="row" style="margin-top:0">
+            <input id="lanUrl" readonly placeholder="用 --lan 启动后会显示手机可访问的地址" />
+            <button class="ghost" id="btnCopyLan" type="button">复制</button>
+          </span>
+          <span class="hint" id="lanHint"></span>
+        </label>
+        <p class="hint span-2">出于合规，本工具不保存 MakerWorld Cookie。需要登录态数据时，请用「下载打印配置 .3mf」或油猴脚本。</p>
+        <hr class="span-2" />
+        <h3 class="span-2" style="font-size:15px">🤖 图片识别（可选）</h3>
+        <p class="hint span-2">支持本地 <b>Ollama</b>（如 <code>qwen2.5vl:3b</code>）或任意 <b>OpenAI 兼容</b>视觉接口（如 GLM-4.6V / Qwen-VL / GPT-4o）。不配置也能用拍照取色等基础功能。</p>
+        <label>识别服务
+          <select id="setVisionProvider">
+            <option value="">自动检测本地 Ollama</option>
+            <option value="openai">OpenAI 兼容接口</option>
+            <option value="ollama">Ollama</option>
+            <option value="anthropic">Anthropic 兼容接口</option>
+          </select>
+        </label>
+        <label>模型
+          <input id="setVisionModel" placeholder="qwen2.5vl:3b / glm-4.6v / gpt-4o" />
+        </label>
+        <label class="span-2">接口地址（Ollama 可留空用 http://127.0.0.1:11434）
+          <input id="setVisionBaseUrl" placeholder="http://127.0.0.1:11434 或 https://…/v1" />
+        </label>
+        <label class="span-2">API Key（只保存在本地 data/db.json；Ollama 可留空）
+          <input id="setVisionApiKey" type="password" placeholder="已保存则留空不修改" />
+        </label>
+        <div class="row span-2">
+          <button class="ghost" id="btnTestVision" type="button">测试识别服务</button>
+          <span class="hint" id="visionStatusText"></span>
+        </div>
+      </div>
+      <div class="modal-foot">
+        <button class="ghost" data-close="modalSettings">取消</button>
+        <button class="primary" id="btnSaveSettings">保存设置</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" hidden></div>
+  <script type="module" src="/app.js?v=20261024"></script>
+</body>
+</html>

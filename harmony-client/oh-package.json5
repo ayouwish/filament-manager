@@ -1,0 +1,10 @@
+{
+  modelVersion: '6.0.0',
+  name: 'filament-manager-harmony',
+  version: '1.0.0',
+  description: '耗材管家 · 鸿蒙客户端',
+  main: '',
+  author: '',
+  license: 'MIT',
+  dependencies: {},
+}

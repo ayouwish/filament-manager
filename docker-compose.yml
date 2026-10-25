@@ -1,0 +1,26 @@
+# 耗材管家 · NAS 部署（在 NAS 上执行：docker compose up -d --build）
+services:
+  filament-manager:
+    build: .
+    image: filament-manager:latest
+    container_name: filament-manager
+    restart: unless-stopped
+    ports:
+      - "${FM_PORT:-4174}:4174"
+    environment:
+      TZ: "${TZ:-Asia/Shanghai}"
+      # 访问令牌：建议设置（除 /api/health 外所有接口都需要 x-fm-token）
+      FM_TOKEN: "${FM_TOKEN:-}"
+      # 入库后自动抓商品图 / 全部商品图抓取 / 主色校验（off 可关闭）
+      AUTO_PRODUCT_IMAGES: "${AUTO_PRODUCT_IMAGES:-on}"
+      PRODUCT_IMAGES: "${PRODUCT_IMAGES:-on}"
+      PRODUCT_IMAGE_COLOR_CHECK: "${PRODUCT_IMAGE_COLOR_CHECK:-on}"
+    volumes:
+      # 库存/照片/设置都在这里，务必放在 NAS 上会备份的目录
+      - ./data:/app/data
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:4174/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

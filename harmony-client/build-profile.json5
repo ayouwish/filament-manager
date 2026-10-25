@@ -1,0 +1,28 @@
+{
+  app: {
+    signingConfigs: [],
+    products: [
+      {
+        name: 'default',
+        signingConfig: 'default',
+        // API 23+；若 DevEco 提示版本格式，以 Project Structure 里下拉选择为准（IDE 会改写成 "x.y.z(23)"）
+        compileSdkVersion: 23,
+        compatibleSdkVersion: 23,
+        runtimeOS: 'HarmonyOS',
+      },
+    ],
+    buildModeSet: [
+      { name: 'debug' },
+      { name: 'release' },
+    ],
+  },
+  modules: [
+    {
+      name: 'entry',
+      srcPath: './entry',
+      targets: [
+        { name: 'default', applyToProducts: ['default'] },
+      ],
+    },
+  ],
+}

@@ -1,0 +1,2726 @@
+{
+ "source": "SpoolmanDB (MIT, Donkie/SpoolmanDB) — Polymaker Panchroma PLA",
+ "note": "由 data/catalog/spoolman-filaments.json 提取，用于按颜色名校正识别结果",
+ "entries": [
+  {
+   "name": "Luminous Blue",
+   "material": "PLA",
+   "colorHex": "#419EC2",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Luminous Green",
+   "material": "PLA",
+   "colorHex": "#75DF69",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Luminous Orange",
+   "material": "PLA",
+   "colorHex": "#EC7626",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Luminous Pink",
+   "material": "PLA",
+   "colorHex": "#F48079",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Luminous Yellow",
+   "material": "PLA",
+   "colorHex": "#CCC93C",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Black",
+   "material": "PLA",
+   "colorHex": "#363538",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Blue",
+   "material": "PLA",
+   "colorHex": "#4999C9",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Brass",
+   "material": "PLA",
+   "colorHex": "#968162",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Bronze",
+   "material": "PLA",
+   "colorHex": "#AF6B4C",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Chrome",
+   "material": "PLA",
+   "colorHex": "#85898B",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Dark Blue",
+   "material": "PLA",
+   "colorHex": "#23599A",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Gold",
+   "material": "PLA",
+   "colorHex": "#C49449",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Green",
+   "material": "PLA",
+   "colorHex": "#55B687",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Gunmetal Grey",
+   "material": "PLA",
+   "colorHex": "#676B6A",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Light Blue",
+   "material": "PLA",
+   "colorHex": "#4CC1CB",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Lime",
+   "material": "PLA",
+   "colorHex": "#C4CF4C",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Magenta",
+   "material": "PLA",
+   "colorHex": "#AA538E",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Orange",
+   "material": "PLA",
+   "colorHex": "#EB6232",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Peridot Green",
+   "material": "PLA",
+   "colorHex": "#7F865B",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Periwinkle",
+   "material": "PLA",
+   "colorHex": "#768EC7",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Purple",
+   "material": "PLA",
+   "colorHex": "#786BB0",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Quartz Pink",
+   "material": "PLA",
+   "colorHex": "#DBBBBB",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Red",
+   "material": "PLA",
+   "colorHex": "#C1443F",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Rose",
+   "material": "PLA",
+   "colorHex": "#CF6076",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Rose Gold",
+   "material": "PLA",
+   "colorHex": "#CBB0B1",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Silver",
+   "material": "PLA",
+   "colorHex": "#BCC2C8",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Teal",
+   "material": "PLA",
+   "colorHex": "#66C2B6",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk White",
+   "material": "PLA",
+   "colorHex": "#DFE4E4",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Silk Yellow",
+   "material": "PLA",
+   "colorHex": "#EEC810",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Starlight Aurora",
+   "material": "PLA",
+   "colorHex": "#314530",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Starlight Comet",
+   "material": "PLA",
+   "colorHex": "#1F312A",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Starlight Jupiter",
+   "material": "PLA",
+   "colorHex": "#774718",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Starlight Mars",
+   "material": "PLA",
+   "colorHex": "#962E31",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Starlight Mercury",
+   "material": "PLA",
+   "colorHex": "#33322D",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Starlight Meteor",
+   "material": "PLA",
+   "colorHex": "#2F3117",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Starlight Midnight",
+   "material": "PLA",
+   "colorHex": "#475A64",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Starlight Nebula",
+   "material": "PLA",
+   "colorHex": "#462F32",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Starlight Neptune",
+   "material": "PLA",
+   "colorHex": "#113148",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Starlight Pulsar",
+   "material": "PLA",
+   "colorHex": "#5C7BC1",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Starlight Twilight",
+   "material": "PLA",
+   "colorHex": "#1E3445",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Celestial Blue",
+   "material": "PLA",
+   "colorHex": "#6ADCF7",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Celestial Green",
+   "material": "PLA",
+   "colorHex": "#6FE2D2",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Celestial Light Pink",
+   "material": "PLA",
+   "colorHex": "#C3ADB8",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Celestial Light Yellow",
+   "material": "PLA",
+   "colorHex": "#D7CE89",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Celestial Purple",
+   "material": "PLA",
+   "colorHex": "#9678C8",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Celestial White",
+   "material": "PLA",
+   "colorHex": "#DCDAD0",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Celestial Yellow",
+   "material": "PLA",
+   "colorHex": "#F4C76A",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Dual Chameleon (Teal-Yellow)",
+   "material": "PLA",
+   "colorHex": "#808080",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.37
+  },
+  {
+   "name": "Marble (Formerly PolyTerra™ Marble) Brick",
+   "material": "PLA",
+   "colorHex": "#CF6646",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Marble (Formerly PolyTerra™ Marble) Limestone",
+   "material": "PLA",
+   "colorHex": "#BFBFB3",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Marble (Formerly PolyTerra™ Marble) Sandstone",
+   "material": "PLA",
+   "colorHex": "#C6C781",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Marble (Formerly PolyTerra™ Marble) Slate Grey",
+   "material": "PLA",
+   "colorHex": "#91C2CC",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Marble (Formerly PolyTerra™ Marble) White",
+   "material": "PLA",
+   "colorHex": "#CFCCD6",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Arctic Teal",
+   "material": "PLA",
+   "colorHex": "#5AABB1",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Arctic Teal",
+   "material": "PLA",
+   "colorHex": "#5AABB1",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Arctic Teal",
+   "material": "PLA",
+   "colorHex": "#5AABB1",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Arctic Teal",
+   "material": "PLA",
+   "colorHex": "#5AABB1",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Beige",
+   "material": "PLA",
+   "colorHex": "#CCA897",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Beige",
+   "material": "PLA",
+   "colorHex": "#CCA897",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Beige",
+   "material": "PLA",
+   "colorHex": "#CCA897",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Beige",
+   "material": "PLA",
+   "colorHex": "#CCA897",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Blue",
+   "material": "PLA",
+   "colorHex": "#062B4D",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Blue",
+   "material": "PLA",
+   "colorHex": "#062B4D",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Blue",
+   "material": "PLA",
+   "colorHex": "#062B4D",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Blue",
+   "material": "PLA",
+   "colorHex": "#062B4D",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Brown",
+   "material": "PLA",
+   "colorHex": "#724E3D",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Brown",
+   "material": "PLA",
+   "colorHex": "#724E3D",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Brown",
+   "material": "PLA",
+   "colorHex": "#724E3D",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Brown",
+   "material": "PLA",
+   "colorHex": "#724E3D",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Dark Green",
+   "material": "PLA",
+   "colorHex": "#515234",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Dark Green",
+   "material": "PLA",
+   "colorHex": "#515234",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Dark Green",
+   "material": "PLA",
+   "colorHex": "#515234",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Dark Green",
+   "material": "PLA",
+   "colorHex": "#515234",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Light Green",
+   "material": "PLA",
+   "colorHex": "#A78403",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Light Green",
+   "material": "PLA",
+   "colorHex": "#A78403",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Light Green",
+   "material": "PLA",
+   "colorHex": "#A78403",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Light Green",
+   "material": "PLA",
+   "colorHex": "#A78403",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Purple",
+   "material": "PLA",
+   "colorHex": "#292036",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Purple",
+   "material": "PLA",
+   "colorHex": "#292036",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Purple",
+   "material": "PLA",
+   "colorHex": "#292036",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Purple",
+   "material": "PLA",
+   "colorHex": "#292036",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Red",
+   "material": "PLA",
+   "colorHex": "#AC1A17",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Red",
+   "material": "PLA",
+   "colorHex": "#AC1A17",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Red",
+   "material": "PLA",
+   "colorHex": "#AC1A17",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Army Red",
+   "material": "PLA",
+   "colorHex": "#AC1A17",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Ash Grey",
+   "material": "PLA",
+   "colorHex": "#575E75",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Ash Grey",
+   "material": "PLA",
+   "colorHex": "#575E75",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Ash Grey",
+   "material": "PLA",
+   "colorHex": "#575E75",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Ash Grey",
+   "material": "PLA",
+   "colorHex": "#575E75",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Charcoal Black",
+   "material": "PLA",
+   "colorHex": "#1C1C1C",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Charcoal Black",
+   "material": "PLA",
+   "colorHex": "#1C1C1C",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Charcoal Black",
+   "material": "PLA",
+   "colorHex": "#1C1C1C",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Charcoal Black",
+   "material": "PLA",
+   "colorHex": "#1C1C1C",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Cotton White",
+   "material": "PLA",
+   "colorHex": "#E6DDDB",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Cotton White",
+   "material": "PLA",
+   "colorHex": "#E6DDDB",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Cotton White",
+   "material": "PLA",
+   "colorHex": "#E6DDDB",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Cotton White",
+   "material": "PLA",
+   "colorHex": "#E6DDDB",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Earth Brown",
+   "material": "PLA",
+   "colorHex": "#7C594A",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Earth Brown",
+   "material": "PLA",
+   "colorHex": "#7C594A",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Earth Brown",
+   "material": "PLA",
+   "colorHex": "#7C594A",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Earth Brown",
+   "material": "PLA",
+   "colorHex": "#7C594A",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Electric Indigo",
+   "material": "PLA",
+   "colorHex": "#764C99",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Electric Indigo",
+   "material": "PLA",
+   "colorHex": "#764C99",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Electric Indigo",
+   "material": "PLA",
+   "colorHex": "#764C99",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Electric Indigo",
+   "material": "PLA",
+   "colorHex": "#764C99",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Emerald Green",
+   "material": "PLA",
+   "colorHex": "#22624F",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Emerald Green",
+   "material": "PLA",
+   "colorHex": "#22624F",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Emerald Green",
+   "material": "PLA",
+   "colorHex": "#22624F",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Emerald Green",
+   "material": "PLA",
+   "colorHex": "#22624F",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Forest Green",
+   "material": "PLA",
+   "colorHex": "#519F61",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Forest Green",
+   "material": "PLA",
+   "colorHex": "#519F61",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Forest Green",
+   "material": "PLA",
+   "colorHex": "#519F61",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Forest Green",
+   "material": "PLA",
+   "colorHex": "#519F61",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Fossil Grey",
+   "material": "PLA",
+   "colorHex": "#6F727E",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Fossil Grey",
+   "material": "PLA",
+   "colorHex": "#6F727E",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Fossil Grey",
+   "material": "PLA",
+   "colorHex": "#6F727E",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Fossil Grey",
+   "material": "PLA",
+   "colorHex": "#6F727E",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Grass Green",
+   "material": "PLA",
+   "colorHex": "#32BC46",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Grass Green",
+   "material": "PLA",
+   "colorHex": "#32BC46",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Grass Green",
+   "material": "PLA",
+   "colorHex": "#32BC46",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Grass Green",
+   "material": "PLA",
+   "colorHex": "#32BC46",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Lava Red",
+   "material": "PLA",
+   "colorHex": "#DE1619",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Lava Red",
+   "material": "PLA",
+   "colorHex": "#DE1619",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Lava Red",
+   "material": "PLA",
+   "colorHex": "#DE1619",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Lava Red",
+   "material": "PLA",
+   "colorHex": "#DE1619",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Lavender Purple",
+   "material": "PLA",
+   "colorHex": "#8A68B5",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Lavender Purple",
+   "material": "PLA",
+   "colorHex": "#8A68B5",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Lavender Purple",
+   "material": "PLA",
+   "colorHex": "#8A68B5",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Lavender Purple",
+   "material": "PLA",
+   "colorHex": "#8A68B5",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Lime Green",
+   "material": "PLA",
+   "colorHex": "#D0E740",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Lime Green",
+   "material": "PLA",
+   "colorHex": "#D0E740",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Lime Green",
+   "material": "PLA",
+   "colorHex": "#D0E740",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Lime Green",
+   "material": "PLA",
+   "colorHex": "#D0E740",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Lotus Pink",
+   "material": "PLA",
+   "colorHex": "#F98289",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Lotus Pink",
+   "material": "PLA",
+   "colorHex": "#F98289",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Lotus Pink",
+   "material": "PLA",
+   "colorHex": "#F98289",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Lotus Pink",
+   "material": "PLA",
+   "colorHex": "#F98289",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Blue",
+   "material": "PLA",
+   "colorHex": "#4E6A84",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Blue",
+   "material": "PLA",
+   "colorHex": "#4E6A84",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Blue",
+   "material": "PLA",
+   "colorHex": "#4E6A84",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Blue",
+   "material": "PLA",
+   "colorHex": "#4E6A84",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Green",
+   "material": "PLA",
+   "colorHex": "#656D60",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Green",
+   "material": "PLA",
+   "colorHex": "#656D60",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Green",
+   "material": "PLA",
+   "colorHex": "#656D60",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Green",
+   "material": "PLA",
+   "colorHex": "#656D60",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Mauve",
+   "material": "PLA",
+   "colorHex": "#A36D82",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Mauve",
+   "material": "PLA",
+   "colorHex": "#A36D82",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Mauve",
+   "material": "PLA",
+   "colorHex": "#A36D82",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Mauve",
+   "material": "PLA",
+   "colorHex": "#A36D82",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Moss",
+   "material": "PLA",
+   "colorHex": "#92864F",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Moss",
+   "material": "PLA",
+   "colorHex": "#92864F",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Moss",
+   "material": "PLA",
+   "colorHex": "#92864F",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Moss",
+   "material": "PLA",
+   "colorHex": "#92864F",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Purple",
+   "material": "PLA",
+   "colorHex": "#7C5577",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Purple",
+   "material": "PLA",
+   "colorHex": "#7C5577",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Purple",
+   "material": "PLA",
+   "colorHex": "#7C5577",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Purple",
+   "material": "PLA",
+   "colorHex": "#7C5577",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Red",
+   "material": "PLA",
+   "colorHex": "#DB3E14",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Red",
+   "material": "PLA",
+   "colorHex": "#DB3E14",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Red",
+   "material": "PLA",
+   "colorHex": "#DB3E14",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Red",
+   "material": "PLA",
+   "colorHex": "#DB3E14",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Teal",
+   "material": "PLA",
+   "colorHex": "#5D989E",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Teal",
+   "material": "PLA",
+   "colorHex": "#5D989E",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Teal",
+   "material": "PLA",
+   "colorHex": "#5D989E",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Teal",
+   "material": "PLA",
+   "colorHex": "#5D989E",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Terracotta",
+   "material": "PLA",
+   "colorHex": "#C06443",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Terracotta",
+   "material": "PLA",
+   "colorHex": "#C06443",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Terracotta",
+   "material": "PLA",
+   "colorHex": "#C06443",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted Terracotta",
+   "material": "PLA",
+   "colorHex": "#C06443",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted White",
+   "material": "PLA",
+   "colorHex": "#AFA198",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted White",
+   "material": "PLA",
+   "colorHex": "#AFA198",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted White",
+   "material": "PLA",
+   "colorHex": "#AFA198",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Muted White",
+   "material": "PLA",
+   "colorHex": "#AFA198",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Banana",
+   "material": "PLA",
+   "colorHex": "#F5CF6F",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Banana",
+   "material": "PLA",
+   "colorHex": "#F5CF6F",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Banana",
+   "material": "PLA",
+   "colorHex": "#F5CF6F",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Banana",
+   "material": "PLA",
+   "colorHex": "#F5CF6F",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Beige",
+   "material": "PLA",
+   "colorHex": "#E4D0B0",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Beige",
+   "material": "PLA",
+   "colorHex": "#E4D0B0",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Beige",
+   "material": "PLA",
+   "colorHex": "#E4D0B0",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Beige",
+   "material": "PLA",
+   "colorHex": "#E4D0B0",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Candy",
+   "material": "PLA",
+   "colorHex": "#DABCC8",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Candy",
+   "material": "PLA",
+   "colorHex": "#DABCC8",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Candy",
+   "material": "PLA",
+   "colorHex": "#DABCC8",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Candy",
+   "material": "PLA",
+   "colorHex": "#DABCC8",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Coral",
+   "material": "PLA",
+   "colorHex": "#F09A7E",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Coral",
+   "material": "PLA",
+   "colorHex": "#F09A7E",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Coral",
+   "material": "PLA",
+   "colorHex": "#F09A7E",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Coral",
+   "material": "PLA",
+   "colorHex": "#F09A7E",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Ice",
+   "material": "PLA",
+   "colorHex": "#95C5D3",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Ice",
+   "material": "PLA",
+   "colorHex": "#95C5D3",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Ice",
+   "material": "PLA",
+   "colorHex": "#95C5D3",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Ice",
+   "material": "PLA",
+   "colorHex": "#95C5D3",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Mint",
+   "material": "PLA",
+   "colorHex": "#BEC9A5",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Mint",
+   "material": "PLA",
+   "colorHex": "#BEC9A5",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Mint",
+   "material": "PLA",
+   "colorHex": "#BEC9A5",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Mint",
+   "material": "PLA",
+   "colorHex": "#BEC9A5",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Peach",
+   "material": "PLA",
+   "colorHex": "#F2B67A",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Peach",
+   "material": "PLA",
+   "colorHex": "#F2B67A",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Peach",
+   "material": "PLA",
+   "colorHex": "#F2B67A",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Peach",
+   "material": "PLA",
+   "colorHex": "#F2B67A",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Peanut",
+   "material": "PLA",
+   "colorHex": "#C29572",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Peanut",
+   "material": "PLA",
+   "colorHex": "#C29572",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Peanut",
+   "material": "PLA",
+   "colorHex": "#C29572",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Peanut",
+   "material": "PLA",
+   "colorHex": "#C29572",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Periwinkle",
+   "material": "PLA",
+   "colorHex": "#BFB2E6",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Periwinkle",
+   "material": "PLA",
+   "colorHex": "#BFB2E6",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Periwinkle",
+   "material": "PLA",
+   "colorHex": "#BFB2E6",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Periwinkle",
+   "material": "PLA",
+   "colorHex": "#BFB2E6",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Watermelon",
+   "material": "PLA",
+   "colorHex": "#E93A3F",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Watermelon",
+   "material": "PLA",
+   "colorHex": "#E93A3F",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Watermelon",
+   "material": "PLA",
+   "colorHex": "#E93A3F",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Pastel Watermelon",
+   "material": "PLA",
+   "colorHex": "#E93A3F",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Raspberry Blue",
+   "material": "PLA",
+   "colorHex": "#5472D0",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Raspberry Blue",
+   "material": "PLA",
+   "colorHex": "#5472D0",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Raspberry Blue",
+   "material": "PLA",
+   "colorHex": "#5472D0",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Raspberry Blue",
+   "material": "PLA",
+   "colorHex": "#5472D0",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sakura Pink",
+   "material": "PLA",
+   "colorHex": "#E0A8BB",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sakura Pink",
+   "material": "PLA",
+   "colorHex": "#E0A8BB",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sakura Pink",
+   "material": "PLA",
+   "colorHex": "#E0A8BB",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sakura Pink",
+   "material": "PLA",
+   "colorHex": "#E0A8BB",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sapphire Blue",
+   "material": "PLA",
+   "colorHex": "#005AA2",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sapphire Blue",
+   "material": "PLA",
+   "colorHex": "#005AA2",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sapphire Blue",
+   "material": "PLA",
+   "colorHex": "#005AA2",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sapphire Blue",
+   "material": "PLA",
+   "colorHex": "#005AA2",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Savannah Yellow",
+   "material": "PLA",
+   "colorHex": "#F0BE02",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Savannah Yellow",
+   "material": "PLA",
+   "colorHex": "#F0BE02",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Savannah Yellow",
+   "material": "PLA",
+   "colorHex": "#F0BE02",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Savannah Yellow",
+   "material": "PLA",
+   "colorHex": "#F0BE02",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Seafoam Green",
+   "material": "PLA",
+   "colorHex": "#7DD4BE",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Seafoam Green",
+   "material": "PLA",
+   "colorHex": "#7DD4BE",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Seafoam Green",
+   "material": "PLA",
+   "colorHex": "#7DD4BE",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Seafoam Green",
+   "material": "PLA",
+   "colorHex": "#7DD4BE",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sky Blue",
+   "material": "PLA",
+   "colorHex": "#87CEEB",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sky Blue",
+   "material": "PLA",
+   "colorHex": "#87CEEB",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sky Blue",
+   "material": "PLA",
+   "colorHex": "#87CEEB",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sky Blue",
+   "material": "PLA",
+   "colorHex": "#87CEEB",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sunrise Orange",
+   "material": "PLA",
+   "colorHex": "#F78E0E",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sunrise Orange",
+   "material": "PLA",
+   "colorHex": "#F78E0E",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sunrise Orange",
+   "material": "PLA",
+   "colorHex": "#F78E0E",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sunrise Orange",
+   "material": "PLA",
+   "colorHex": "#F78E0E",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sunshine Yellow",
+   "material": "PLA",
+   "colorHex": "#F9DA07",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sunshine Yellow",
+   "material": "PLA",
+   "colorHex": "#F9DA07",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sunshine Yellow",
+   "material": "PLA",
+   "colorHex": "#F9DA07",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Sunshine Yellow",
+   "material": "PLA",
+   "colorHex": "#F9DA07",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Wine Burgundy",
+   "material": "PLA",
+   "colorHex": "#753E4C",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Wine Burgundy",
+   "material": "PLA",
+   "colorHex": "#753E4C",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Wine Burgundy",
+   "material": "PLA",
+   "colorHex": "#753E4C",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Wine Burgundy",
+   "material": "PLA",
+   "colorHex": "#753E4C",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Wood Brown",
+   "material": "PLA",
+   "colorHex": "#AD7441",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Wood Brown",
+   "material": "PLA",
+   "colorHex": "#AD7441",
+   "weight": 1000,
+   "spoolWeight": 140,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Wood Brown",
+   "material": "PLA",
+   "colorHex": "#AD7441",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Matte (Formerly PolyTerra™) Wood Brown",
+   "material": "PLA",
+   "colorHex": "#AD7441",
+   "weight": 3000,
+   "spoolWeight": 425,
+   "density": 1.24
+  },
+  {
+   "name": "Regular Aqua Blue",
+   "material": "PLA",
+   "colorHex": "#39B9DB",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Aqua Blue",
+   "material": "PLA",
+   "colorHex": "#39B9DB",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Aqua Blue",
+   "material": "PLA",
+   "colorHex": "#39B9DB",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Azure Blue",
+   "material": "PLA",
+   "colorHex": "#0066D9",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Azure Blue",
+   "material": "PLA",
+   "colorHex": "#0066D9",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Azure Blue",
+   "material": "PLA",
+   "colorHex": "#0066D9",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Beige",
+   "material": "PLA",
+   "colorHex": "#C6AD74",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Beige",
+   "material": "PLA",
+   "colorHex": "#C6AD74",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Beige",
+   "material": "PLA",
+   "colorHex": "#C6AD74",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Black",
+   "material": "PLA",
+   "colorHex": "#080A0D",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Black",
+   "material": "PLA",
+   "colorHex": "#080A0D",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Black",
+   "material": "PLA",
+   "colorHex": "#080A0D",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Blue",
+   "material": "PLA",
+   "colorHex": "#003776",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Blue",
+   "material": "PLA",
+   "colorHex": "#003776",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Blue",
+   "material": "PLA",
+   "colorHex": "#003776",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Brown",
+   "material": "PLA",
+   "colorHex": "#55331A",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Brown",
+   "material": "PLA",
+   "colorHex": "#55331A",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Brown",
+   "material": "PLA",
+   "colorHex": "#55331A",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Cold White",
+   "material": "PLA",
+   "colorHex": "#EAECF5",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Cold White",
+   "material": "PLA",
+   "colorHex": "#EAECF5",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Cold White",
+   "material": "PLA",
+   "colorHex": "#EAECF5",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Cream",
+   "material": "PLA",
+   "colorHex": "#E5C8A2",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Cream",
+   "material": "PLA",
+   "colorHex": "#E5C8A2",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Cream",
+   "material": "PLA",
+   "colorHex": "#E5C8A2",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Dark Blue",
+   "material": "PLA",
+   "colorHex": "#041B3D",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Dark Blue",
+   "material": "PLA",
+   "colorHex": "#041B3D",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Dark Blue",
+   "material": "PLA",
+   "colorHex": "#041B3D",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Dark Grey Green",
+   "material": "PLA",
+   "colorHex": "#4C5F46",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Dark Grey Green",
+   "material": "PLA",
+   "colorHex": "#4C5F46",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Dark Grey Green",
+   "material": "PLA",
+   "colorHex": "#4C5F46",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Green",
+   "material": "PLA",
+   "colorHex": "#06924D",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Green",
+   "material": "PLA",
+   "colorHex": "#06924D",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Green",
+   "material": "PLA",
+   "colorHex": "#06924D",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Grey",
+   "material": "PLA",
+   "colorHex": "#8C9099",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Grey",
+   "material": "PLA",
+   "colorHex": "#8C9099",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Grey",
+   "material": "PLA",
+   "colorHex": "#8C9099",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Jungle Green",
+   "material": "PLA",
+   "colorHex": "#446B20",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Jungle Green",
+   "material": "PLA",
+   "colorHex": "#446B20",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Jungle Green",
+   "material": "PLA",
+   "colorHex": "#446B20",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Lemon Yellow",
+   "material": "PLA",
+   "colorHex": "#F1D335",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Lemon Yellow",
+   "material": "PLA",
+   "colorHex": "#F1D335",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Lemon Yellow",
+   "material": "PLA",
+   "colorHex": "#F1D335",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Lime Green",
+   "material": "PLA",
+   "colorHex": "#DEDE00",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Lime Green",
+   "material": "PLA",
+   "colorHex": "#DEDE00",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Lime Green",
+   "material": "PLA",
+   "colorHex": "#DEDE00",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Magenta",
+   "material": "PLA",
+   "colorHex": "#F2306E",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Magenta",
+   "material": "PLA",
+   "colorHex": "#F2306E",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Magenta",
+   "material": "PLA",
+   "colorHex": "#F2306E",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Natural",
+   "material": "PLA",
+   "colorHex": "#E8E6D0",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Natural",
+   "material": "PLA",
+   "colorHex": "#E8E6D0",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Natural",
+   "material": "PLA",
+   "colorHex": "#E8E6D0",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Olive Brown",
+   "material": "PLA",
+   "colorHex": "#A79565",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Olive Brown",
+   "material": "PLA",
+   "colorHex": "#A79565",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Olive Brown",
+   "material": "PLA",
+   "colorHex": "#A79565",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Olive Green",
+   "material": "PLA",
+   "colorHex": "#857C00",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Olive Green",
+   "material": "PLA",
+   "colorHex": "#857C00",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Olive Green",
+   "material": "PLA",
+   "colorHex": "#857C00",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Orange",
+   "material": "PLA",
+   "colorHex": "#F67405",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Orange",
+   "material": "PLA",
+   "colorHex": "#F67405",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Orange",
+   "material": "PLA",
+   "colorHex": "#F67405",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Pink",
+   "material": "PLA",
+   "colorHex": "#EE9BB5",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Pink",
+   "material": "PLA",
+   "colorHex": "#EE9BB5",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Pink",
+   "material": "PLA",
+   "colorHex": "#EE9BB5",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Polymaker Teal",
+   "material": "PLA",
+   "colorHex": "#4CC0C7",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Polymaker Teal",
+   "material": "PLA",
+   "colorHex": "#4CC0C7",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Polymaker Teal",
+   "material": "PLA",
+   "colorHex": "#4CC0C7",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Purple",
+   "material": "PLA",
+   "colorHex": "#6C47B2",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Purple",
+   "material": "PLA",
+   "colorHex": "#6C47B2",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Purple",
+   "material": "PLA",
+   "colorHex": "#6C47B2",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Red",
+   "material": "PLA",
+   "colorHex": "#E72F1D",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Red",
+   "material": "PLA",
+   "colorHex": "#E72F1D",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Red",
+   "material": "PLA",
+   "colorHex": "#E72F1D",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Steel Grey",
+   "material": "PLA",
+   "colorHex": "#616469",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Steel Grey",
+   "material": "PLA",
+   "colorHex": "#616469",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Steel Grey",
+   "material": "PLA",
+   "colorHex": "#616469",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Stone Blue",
+   "material": "PLA",
+   "colorHex": "#40719A",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Stone Blue",
+   "material": "PLA",
+   "colorHex": "#40719A",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Stone Blue",
+   "material": "PLA",
+   "colorHex": "#40719A",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular White",
+   "material": "PLA",
+   "colorHex": "#E2DEDB",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular White",
+   "material": "PLA",
+   "colorHex": "#E2DEDB",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular White",
+   "material": "PLA",
+   "colorHex": "#E2DEDB",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Wine Red",
+   "material": "PLA",
+   "colorHex": "#E0191E",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Wine Red",
+   "material": "PLA",
+   "colorHex": "#E0191E",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Wine Red",
+   "material": "PLA",
+   "colorHex": "#E0191E",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Yellow",
+   "material": "PLA",
+   "colorHex": "#F3B400",
+   "weight": 1000.0,
+   "spoolWeight": 140.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Yellow",
+   "material": "PLA",
+   "colorHex": "#F3B400",
+   "weight": 3000.0,
+   "spoolWeight": 425.0,
+   "density": 1.19
+  },
+  {
+   "name": "Regular Yellow",
+   "material": "PLA",
+   "colorHex": "#F3B400",
+   "weight": 5000.0,
+   "spoolWeight": 819.0,
+   "density": 1.19
+  }
+ ]
+}
