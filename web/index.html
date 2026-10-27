@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
   <link rel="icon" href="/icons/icon-192.png" />
   <title>耗材管家 · 家庭 3D 打印材料管理</title>
-  <link rel="stylesheet" href="/style.css?v=20261028" />
+  <link rel="stylesheet" href="/style.css?v=20261029" />
 </head>
 <body>
   <header class="app-header">
@@ -45,9 +45,10 @@
       <div class="summary" id="invSummary"></div>
       <div class="toolbar">
         <button class="primary" id="btnAdd">＋ 拍照添加耗材</button>
+        <button class="ghost" id="btnAddGallery">🖼️ 从相册添加</button>
         <button class="ghost" id="btnFetchImages">🖼️ 自动找商品图</button>
         <button class="ghost" id="btnMergeDuplicates">🧩 合并同款</button>
-        <span class="hint">拍照 → 自动识别（或手动填）→ 核对入库；点图片可放大取色</span>
+        <span class="hint">拍照直接调相机；相册选已有照片；或手动填写。点图片可放大取色</span>
       </div>
       <div class="toolbar secondary">
         <div class="seg" id="viewSeg">
@@ -326,6 +327,6 @@
   </div>
 
   <div id="toast" class="toast" hidden></div>
-  <script type="module" src="/app.js?v=20261028"></script>
+  <script type="module" src="/app.js?v=20261029"></script>
 </body>
 </html>

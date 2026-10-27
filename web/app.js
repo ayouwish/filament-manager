@@ -1583,6 +1583,15 @@ function bindEvents() {
   $$('.tab').forEach((tab) => tab.addEventListener('click', () => switchView(tab.dataset.view)));
   $('#btnAdd').addEventListener('click', () => openAddModal());
   $('#btnAddEmpty').addEventListener('click', () => openAddModal());
+  $('#btnAddGallery').addEventListener('click', () => {
+    openAddModal();
+    // 直接触发相册 input（用户手势内，浏览器允许）
+    try {
+      $('#addPhotoPickInput').click();
+    } catch {
+      toast('请点弹窗里的「🖼️ 相册」选择照片');
+    }
+  });
   $('#btnFetchImages').addEventListener('click', fetchMissingProductImages);
   $('#btnMergeDuplicates').addEventListener('click', mergeDuplicateSpools);
   $('#viewSeg').addEventListener('click', (e) => {
