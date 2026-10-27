@@ -29,6 +29,11 @@
     <button class="icon-btn" id="btnSettings" title="设置" aria-label="设置">⚙</button>
   </header>
 
+  <div id="authBanner" class="version-banner auth-banner" hidden>
+    需要访问令牌：请在 ⚙ 设置 →「访问令牌」里填写与后端 <code>FM_TOKEN</code> 相同的值。
+    <a href="#" id="authBannerOpen">去设置 →</a>
+  </div>
+
   <div id="versionBanner" class="version-banner" hidden>
     当前页面（<span id="bannerOrigin"></span>）连接的是旧版服务，没有图片识别接口。
     <a id="bannerLink" href="http://127.0.0.1:4174">切换到新版 http://127.0.0.1:4174 →</a>
@@ -254,6 +259,13 @@
         <button class="icon-btn" data-close="modalSettings" aria-label="关闭">✕</button>
       </div>
       <div class="modal-body form-grid">
+        <h3 class="span-2" style="font-size:15px">🔐 访问令牌</h3>
+        <label class="span-2">FM_TOKEN（后端 .env 设置了才需要填）
+          <input id="setApiToken" type="password" placeholder="与服务端 .env 里的 FM_TOKEN 一致" autocomplete="off" />
+          <span class="hint">只保存在当前浏览器 localStorage，刷新/换浏览器需重填；不会上传或写入服务端。</span>
+        </label>
+        <hr class="span-2" />
+        <h3 class="span-2" style="font-size:15px">🎯 匹配设置</h3>
         <label class="span-2">可接受色差上限 ΔE：<b id="maxDeltaELabel">12</b>
           <input type="range" id="setMaxDeltaE" min="4" max="30" step="1" value="12" />
           <span class="hint">ΔE ≤ 5 肉眼几乎同色；&gt; 10 通常能明显看出色差，不建议自动选中。</span>

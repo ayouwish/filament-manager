@@ -62,6 +62,8 @@
 | `GET /api/health` | 永远 200，不需要令牌 |
 
 > 原生客户端不存在 CORS 问题；网页端跨域由后端 Origin 白名单限制（同源 + MakerWorld 页面导入）。
+>
+> 网页端：令牌保存在浏览器 `localStorage`（键 `fm.apiToken`），请求时自动带 `x-fm-token`；未设置令牌时无需填写。浏览器直接访问 `/data/photos/*` 静态图片不受令牌限制。
 
 ---
 

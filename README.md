@@ -27,7 +27,7 @@ node server.mjs --lan --port 4174   # 4173 被占用时换端口
 
 ```bash
 cd filament-manager
-cp .env.example .env      # 填 FM_TOKEN（随机串）
+cp .env.example .env      # 家庭局域网可留空；需要鉴权再填 FM_TOKEN
 sudo docker compose up -d --build
 # 打开 http://<NAS 局域网 IP>:4174
 ```
@@ -36,7 +36,7 @@ sudo docker compose up -d --build
 - 完整步骤（群晖 Container Manager / 威联通 Container Station / 通用 Linux、HTTPS 反代、备份、升级、排错）见 **[docs/DEPLOY_NAS.md](docs/DEPLOY_NAS.md)**；
 - 不用 Docker 也可以：NAS 上装 Node 18+ 后 `FM_TOKEN=xxx node server.mjs --lan`（配合 systemd/pm2/任务计划守护）。
 
-> 镜像监听 `0.0.0.0`，映射端口后局域网可访问。**建议设置 `FM_TOKEN`**（见「隐私与安全」）；不设时接口开放，只适合完全可信的内网。本机直接 `node server.mjs` 默认只监听 `127.0.0.1`，更安全。
+> 镜像监听 `0.0.0.0`，映射端口后局域网可访问。家庭内网自用可以不设 `FM_TOKEN`（任何 Wi-Fi 设备都能读写，确认网络可信即可）；要开鉴权时在 `.env` 填随机串，再到网页 ⚙ 设置 →「访问令牌」填同一个值（只存浏览器本地）。本机直接 `node server.mjs` 默认只监听 `127.0.0.1`，更安全。
 
 ---
 
@@ -214,7 +214,7 @@ npm run fixtures         # 重新生成 test/fixtures/*.3mf（需要 python3）
 ## 隐私与安全
 
 - 默认只监听 `127.0.0.1`；`--lan` 会暴露到局域网，建议同时设置 `FM_TOKEN`。
-- `FM_TOKEN`：设置后除 `/api/health` 外所有接口都要 `x-fm-token`（或 `?token=`）；网页端和鸿蒙客户端都会带上你填的令牌。
+- `FM_TOKEN`（**可选**）：设置后除 `/api/health` 外所有接口都要 `x-fm-token`（或 `?token=`）；网页端在 ⚙ 设置里填、鸿蒙客户端在设置里填。家庭局域网自用可留空。
 - 写接口有跨域保护：默认拒绝陌生网页读写本地库存；只有同源页面与「MakerWorld 页面导入」这一条跨域路径被允许。
 - 照片、库存、打印记录全部在本地 `data/`；不保存 MakerWorld Cookie/登录态。
 - 图片识别可完全本地（Ollama）；云端识别会把照片发给对应服务商。

@@ -46,28 +46,31 @@ filament-manager/
 
 ---
 
-## 2. 生成访问令牌并写 `.env`
+## 2. 写 `.env`（令牌可选）
 
 ```bash
-# NAS（Linux）上生成随机令牌
-openssl rand -hex 24
+cp .env.example .env
+vi .env
 ```
 
-Windows PowerShell：
-
-```powershell
--join ((48..57)+(97..122) | Get-Random -Count 32 | % {[char]$_})
-```
-
-复制 `.env.example` 为 `.env`，填进去：
+家庭局域网自用，最小配置：
 
 ```ini
 FM_PORT=4174
 TZ=Asia/Shanghai
-FM_TOKEN=刚才生成的随机串
+FM_TOKEN=
 ```
 
-> 设置 `FM_TOKEN` 后，**除 `/api/health` 外所有接口**都要带 `x-fm-token`；网页端在 ⚙ 设置里填同一个值，鸿蒙客户端也在「设置」里填。把 NAS 暴露到公网时**必须**设置。
+> **`FM_TOKEN` 留空 = 不鉴权**，同一 Wi-Fi 下打开网页即可用，不需要在网页/客户端填任何令牌。适合完全可信的家庭网络。
+>
+> 如果以后要暴露到公网或访客网络，再设置令牌：
+>
+> ```bash
+> openssl rand -hex 24        # Windows PowerShell:
+> # -join ((48..57)+(97..122) | Get-Random -Count 32 | % {[char]$_})
+> ```
+>
+> 写入 `FM_TOKEN=随机串`，并到网页 ⚙ 设置 →「访问令牌」填同一个值（只存浏览器 localStorage）、鸿蒙客户端设置里也填。设置后除 `/api/health` 外所有接口都需要 `x-fm-token`。
 
 ---
 
@@ -104,7 +107,7 @@ sudo docker compose up -d --build
 curl http://127.0.0.1:4174/api/health
 # → {"ok":true,"version":1}
 
-# 带令牌查库存
+# 如果设置了令牌，再验证一次
 curl -H "x-fm-token: 你的令牌" http://127.0.0.1:4174/api/state
 
 # 容器日志 / 状态
@@ -182,7 +185,7 @@ sudo docker compose up -d --build
 
 ## 9. 安全清单
 
-- [ ] 设置了 `FM_TOKEN`（32 位以上随机串）。
+- [ ] 家庭局域网自用：可以不设 `FM_TOKEN`；若开放到外网，必须设置 32 位以上随机串。
 - [ ] 没有把 4174 端口直接映射到公网；外网只走 HTTPS 反代（必要时再加一层 Basic Auth / 群晖账号认证）。
 - [ ] `.env` 不提交到 git，不截图外发。
 - [ ] 定期备份 `data/`。

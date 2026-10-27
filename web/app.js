@@ -20,6 +20,7 @@ const state = {
   photo: { dataUrl: '', hex: '#808080' },
   inventory: { view: 'grid', group: 'brand', query: '', filterBrand: '', filterType: '', collapsed: {} },
   imageQueue: { pending: 0, running: false },
+  apiToken: '',
   add: { dataUrl: '', mime: 'image/jpeg', items: [], activeIndex: 0, summary: '' },
   lightbox: null,
   visionReady: false,
@@ -46,19 +47,53 @@ function escapeHtml(value) {
 
 const fmt = (n, d = 0) => (Number.isFinite(Number(n)) ? Number(n).toFixed(d) : '—');
 
+const API_TOKEN_KEY = 'fm.apiToken';
+
+function loadApiToken() {
+  try {
+    return localStorage.getItem(API_TOKEN_KEY) || '';
+  } catch {
+    return '';
+  }
+}
+
+function persistApiToken(token) {
+  try {
+    if (token) localStorage.setItem(API_TOKEN_KEY, token);
+    else localStorage.removeItem(API_TOKEN_KEY);
+  } catch {
+    /* 隐私模式忽略 */
+  }
+}
+
+function showAuthBanner() {
+  const el = $('#authBanner');
+  if (el) el.hidden = false;
+}
+
+function hideAuthBanner() {
+  const el = $('#authBanner');
+  if (el) el.hidden = true;
+}
+
 async function api(path, { method = 'GET', body } = {}) {
+  const headers = {};
+  if (body !== undefined) headers['Content-Type'] = 'application/json';
+  if (state.apiToken) headers['x-fm-token'] = state.apiToken;
   const res = await fetch(path, {
     method,
-    headers: body === undefined ? {} : { 'Content-Type': 'application/json' },
+    headers,
     body: body === undefined ? undefined : JSON.stringify(body),
   });
   const data = await res.json().catch(() => ({ error: `响应不是 JSON（HTTP ${res.status}）` }));
   if (!res.ok) {
+    if (res.status === 401) showAuthBanner();
     const err = new Error(data.error || data.message || `HTTP ${res.status}`);
     err.payload = data;
     err.status = res.status;
     throw err;
   }
+  hideAuthBanner();
   return data;
 }
 
@@ -1502,6 +1537,8 @@ function openSettings() {
   $('#setVisionApiKey').value = '';
   $('#setVisionApiKey').placeholder = v.hasApiKey ? '已保存 API Key（留空不修改）' : 'sk-…（只保存在本地）';
   $('#visionStatusText').textContent = '';
+  const tokenEl = $('#setApiToken');
+  if (tokenEl) tokenEl.value = state.apiToken;
   loadLanInfo();
   updateSettingsLabels();
   openModal('modalSettings');
@@ -1513,6 +1550,10 @@ function updateSettingsLabels() {
 }
 
 async function saveSettings() {
+  // 令牌只存浏览器本地；先保存，后续请求才会带上
+  const token = ($('#setApiToken')?.value || '').trim();
+  state.apiToken = token;
+  persistApiToken(token);
   const match = {
     maxDeltaE: Number($('#setMaxDeltaE').value),
     goodDeltaE: Number($('#setGoodDeltaE').value),
@@ -1569,6 +1610,10 @@ function bindEvents() {
     renderInventory();
   });
   $('#btnSettings').addEventListener('click', openSettings);
+  $('#authBannerOpen').addEventListener('click', (e) => {
+    e.preventDefault();
+    openSettings();
+  });
   $('#btnSaveSettings').addEventListener('click', saveSettings);
   $('#addPhotoInput').addEventListener('change', (e) => onAddPhotoPicked(e.target.files?.[0]));
   $('#btnRunRecognize').addEventListener('click', runAddRecognition);
@@ -1734,6 +1779,7 @@ async function handleImportHash() {
 
 bindEvents();
 state.inventory = loadInventoryPrefs();
+state.apiToken = loadApiToken();
 refreshState()
   .then(checkBackendVersion)
   .then(handleImportHash)
