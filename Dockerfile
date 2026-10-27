@@ -1,7 +1,9 @@
 FROM node:22-alpine
 
-# 商品图主色校验（可选，缺失时自动跳过）
-RUN apk add --no-cache python3 py3-pil
+# 商品图主色校验（可选）：Alpine 包名是 py3-pillow；装不上也继续构建（代码会自动跳过校验）
+RUN apk add --no-cache python3 py3-pillow \
+ || apk add --no-cache python3 \
+ || true
 
 WORKDIR /app
 ENV NODE_ENV=production \

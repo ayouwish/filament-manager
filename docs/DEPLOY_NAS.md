@@ -2,7 +2,7 @@
 
 目标：把「耗材管家」后端跑在家里 NAS 上，手机浏览器 / 鸿蒙客户端 / 电脑都访问同一个地址，数据（库存、照片、打印记录）留在 NAS 上。
 
-- 镜像基于 `node:22-alpine`，**无 npm 依赖**，构建只需要能拉取 `node:22-alpine` 和 alpine 的 `python3/py3-pil`（用于商品图主色校验）。
+- 镜像基于 `node:22-alpine`，**无 npm 依赖**，构建只需要能拉取 `node:22-alpine` 和 alpine 的 `python3/py3-pillow`（用于商品图主色校验，可选；装不上会自动跳过，不影响构建）。
 - 数据全部在 `data/` 目录（`db.json` + `photos/`），用卷挂到 NAS 上；升级/重建容器不会丢数据。
 - 支持 x86_64 与 ARM64（群晖/威联通常见架构都可以）。
 
@@ -237,7 +237,7 @@ cd /volume1/docker/filament
 sudo docker compose up -d
 ```
 
-> 构建时 `apk add python3 py3-pil` 需要电脑能上外网；如果电脑也不方便，可临时把 Dockerfile 里那行注释掉（商品图主色校验会自动跳过，功能仍可用）。
+> 构建时 `apk add python3 py3-pillow` 需要能上外网；如果网络/镜像源不可用，可直接把 Dockerfile 里那行注释掉（商品图主色校验会自动跳过，功能仍可用）。
 
 ---
 
