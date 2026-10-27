@@ -1784,6 +1784,12 @@ refreshState()
   .then(checkBackendVersion)
   .then(handleImportHash)
   .catch((err) => {
-    setStatus(`无法连接本地服务：${err.message}`, 'error');
-    toast('无法连接本地服务，请确认 node server.mjs 正在运行', true);
+    if (err.status === 401) {
+      showAuthBanner();
+      toast('需要访问令牌：请在 ⚙ 设置里填写 FM_TOKEN；家庭自用可把后端 .env 的 FM_TOKEN 留空并重启', true);
+      setStatus('需要访问令牌：请在设置里填写 FM_TOKEN（或后端留空关闭鉴权）', 'error');
+    } else {
+      setStatus(`无法连接本地服务：${err.message}`, 'error');
+      toast('无法连接本地服务，请确认 node server.mjs 正在运行', true);
+    }
   });

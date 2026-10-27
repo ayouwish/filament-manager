@@ -200,7 +200,7 @@ sudo docker compose up -d --build
 | 页面打不开 / 请求没响应 | 1) `docker compose ps -a` 看状态是 running / created / exited；2) `docker logs --tail 100 filament-manager`；3) `docker port filament-manager` 看实际映射端口；4) 在 NAS 上 `curl -v http://127.0.0.1:4174/api/health`；5) 本机能通、手机/电脑不通 → NAS 防火墙放行端口、确认同一 Wi-Fi、用 NAS 局域网 IP 而不是容器日志里的 172.x 地址 |
 | `docker compose up -d` 一直不返回 / 停在 Created | 正常最后一行是 `Container filament-manager Started`。Ctrl+C 后执行 `docker compose up -d --wait --wait-timeout 60`，再用 `docker compose ps` 确认；若 created/exited 则看 `docker logs` |
 | 容器日志里显示 `耗材管家已启动：http://127.0.0.1:4174` | 说明应用本身正常，问题在端口/网络：用 `docker port` 确认映射，再从 NAS 本机和局域网分别测试 |
-| 打开后接口 401 | 客户端/网页没填 `FM_TOKEN`，或与 `.env` 不一致 |
+| 打开后接口 401 / 顶部提示「需要访问令牌」 | `.env` 里 `FM_TOKEN` 非空（可能是旧模板占位符）。家庭自用：`sed -i 's/^FM_TOKEN=.*/FM_TOKEN=/' .env && sudo docker compose up -d`；或到网页 ⚙ 设置 →「访问令牌」填同一个值 |
 | 数据没保存 / 写入失败 | 挂载目录权限：`sudo chown -R 1026:100 data`（群晖 Docker 用户），或确认共享文件夹允许写入 |
 | 商品图一直失败 | NAS 无外网或被限流：`AUTO_PRODUCT_IMAGES=off` / `PRODUCT_IMAGES=off`；也可单盘「换图」重试 |
 | 商品图抓到了无关图 | 已内置相关性+主色校验；仍不对时点「换图」，或 `PRODUCT_IMAGE_COLOR_CHECK=off` 反而更差，不建议关 |
