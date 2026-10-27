@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
   <link rel="icon" href="/icons/icon-192.png" />
   <title>耗材管家 · 家庭 3D 打印材料管理</title>
-  <link rel="stylesheet" href="/style.css?v=20261024" />
+  <link rel="stylesheet" href="/style.css?v=20261028" />
 </head>
 <body>
   <header class="app-header">
@@ -155,8 +155,10 @@
             <img id="editPhotoImg" alt="料盘照片" hidden />
           </div>
           <div class="photo-actions">
-            <label class="file-btn primary" for="photoInput">📷 拍照 / 选图</label>
+            <label class="file-btn primary" for="photoInput">📷 拍照</label>
             <input id="photoInput" type="file" accept="image/*" capture="environment" hidden />
+            <label class="file-btn ghost" for="photoPickInput">🖼️ 相册</label>
+            <input id="photoPickInput" type="file" accept="image/*" hidden />
             <button class="ghost" id="btnAutoFillFromPhoto" type="button">🤖 自动识别并填表</button>
             <button class="ghost" id="btnClearPhoto" type="button">清除照片</button>
             <p class="hint">照片加载后，<b>点击照片可放大</b>；在放大图上点一下即可取色填入颜色。</p>
@@ -215,8 +217,10 @@
       <div class="modal-body">
         <p class="hint">拍料盘或整箱标签：能识别就自动填好品牌/材料/颜色/SKU/克重；识别不了就手动填。结果核对后一起入库。</p>
         <div class="row wrap">
-          <label class="file-btn primary" for="addPhotoInput">📷 拍照 / 选图</label>
+          <label class="file-btn primary" for="addPhotoInput">📷 拍照</label>
           <input id="addPhotoInput" type="file" accept="image/*" capture="environment" hidden />
+          <label class="file-btn ghost" for="addPhotoPickInput">🖼️ 相册</label>
+          <input id="addPhotoPickInput" type="file" accept="image/*" hidden />
           <button class="primary" id="btnRunRecognize" disabled>🤖 识别照片</button>
           <button class="ghost" id="btnAddManualItem">＋ 手动添加一行</button>
           <span class="hint" id="recognizeEngineHint"></span>
@@ -322,6 +326,6 @@
   </div>
 
   <div id="toast" class="toast" hidden></div>
-  <script type="module" src="/app.js?v=20261024"></script>
+  <script type="module" src="/app.js?v=20261028"></script>
 </body>
 </html>

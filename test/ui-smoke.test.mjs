@@ -108,7 +108,7 @@ test('app.js 顶层绑定与 index.html 元素一致', async () => {
   await new Promise((r) => setTimeout(r, 30)); // 等 refreshState/checkBackendVersion 的 promise 走完
   assert.ok(ids.has('modalAdd'), '统一添加弹窗存在');
   assert.ok(ids.has('photoLightbox'), '图片放大浮层存在');
-  for (const id of ['btnFetchImages', 'btnMergeDuplicates', 'viewSeg', 'groupBy', 'filterBrand', 'filterType', 'searchSpools', 'invCount', 'imageQueueHint', 'splitCount', 'authBanner', 'authBannerOpen', 'setApiToken']) {
+  for (const id of ['btnFetchImages', 'btnMergeDuplicates', 'viewSeg', 'groupBy', 'filterBrand', 'filterType', 'searchSpools', 'invCount', 'imageQueueHint', 'splitCount', 'authBanner', 'authBannerOpen', 'setApiToken', 'addPhotoInput', 'addPhotoPickInput', 'photoInput', 'photoPickInput']) {
     assert.ok(ids.has(id), `库存视图控件 ${id} 存在`);
   }
   assert.ok(!ids.has('modalRecognize'), '旧的独立识别弹窗已移除');

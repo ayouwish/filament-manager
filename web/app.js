@@ -1615,7 +1615,13 @@ function bindEvents() {
     openSettings();
   });
   $('#btnSaveSettings').addEventListener('click', saveSettings);
-  $('#addPhotoInput').addEventListener('change', (e) => onAddPhotoPicked(e.target.files?.[0]));
+  for (const id of ['addPhotoInput', 'addPhotoPickInput']) {
+    $(`#${id}`).addEventListener('change', (e) => {
+      const file = e.target.files?.[0];
+      e.target.value = '';
+      onAddPhotoPicked(file);
+    });
+  }
   $('#btnRunRecognize').addEventListener('click', runAddRecognition);
   $('#btnAddManualItem').addEventListener('click', () => addAddItem(true));
   $('#btnSaveItems').addEventListener('click', saveAddItems);
@@ -1636,7 +1642,13 @@ function bindEvents() {
     $$('.modal').forEach((m) => { m.hidden = true; });
   });
 
-  $('#photoInput').addEventListener('change', (e) => onPhotoPicked(e.target.files?.[0]));
+  for (const id of ['photoInput', 'photoPickInput']) {
+    $(`#${id}`).addEventListener('change', (e) => {
+      const file = e.target.files?.[0];
+      e.target.value = '';
+      onPhotoPicked(file);
+    });
+  }
   $('#btnAutoFillFromPhoto').addEventListener('click', autoFillFromPhoto);
   $('#btnClearPhoto').addEventListener('click', () => {
     state.photo.dataUrl = '';
