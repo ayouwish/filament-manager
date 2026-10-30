@@ -34,6 +34,7 @@ sudo docker compose up -d --build
 
 - 数据在 `./data`（`db.json` + 照片），升级重建容器不丢数据；
 - 完整步骤（群晖 Container Manager / 威联通 Container Station / 通用 Linux、HTTPS 反代、备份、升级、排错）见 **[docs/DEPLOY_NAS.md](docs/DEPLOY_NAS.md)**；
+- 想挂到 NAS 统一网关/域名（NPM + 通配符证书，如 `https://filament.dreamsearch.top`）见 **[docs/NPM_GATEWAY.md](docs/NPM_GATEWAY.md)**；
 - 不用 Docker 也可以：NAS 上装 Node 18+ 后 `FM_TOKEN=xxx node server.mjs --lan`（配合 systemd/pm2/任务计划守护）。
 
 > 镜像监听 `0.0.0.0`，映射端口后局域网可访问。家庭内网自用可以不设 `FM_TOKEN`（任何 Wi-Fi 设备都能读写，确认网络可信即可）；要开鉴权时在 `.env` 填随机串，再到网页 ⚙ 设置 →「访问令牌」填同一个值（只存浏览器本地）。本机直接 `node server.mjs` 默认只监听 `127.0.0.1`，更安全。
@@ -187,6 +188,7 @@ filament-manager/
 ├── docs/
 │   ├── CLIENT_PROTOCOL.md  # 客户端协议（字段/错误码/限制/示例）
 │   ├── DEPLOY_NAS.md       # NAS 部署指南（Compose/群晖/威联通/HTTPS/备份）
+│   ├── NPM_GATEWAY.md      # 接入 NAS 统一网关（NPM 反代/证书/上传/排错）
 │   ├── DESIGN.md           # 产品与技术设计
 │   ├── research.md         # 调研笔记
 │   └── QA-REPORT.md        # 独立 QA 复核报告

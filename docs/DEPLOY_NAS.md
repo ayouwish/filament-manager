@@ -254,3 +254,19 @@ scp -r data/db.json data/photos admin@192.168.1.10:/volume1/docker/filament/data
 ```
 
 迁移后建议在界面里点一次「🧩 合并同款」整理重复记录，并用「🖼️ 自动找商品图」补齐缺失图片。
+
+---
+
+## 13. 接入 NAS 统一网关（Nginx Proxy Manager，推荐）
+
+如果 NAS 上已经有 NPM（比如 `english.dreamsearch.top` 已经在用），建议给耗材管家也挂一个域名，
+而不是直接访问 `http://NAS-IP:4174`：
+
+- 内网 DNS：`filament.dreamsearch.top` → `192.168.50.104`（NAS 局域网 IP，仅内网）；
+- NPM Proxy Host：`http://192.168.50.104:4174`，SSL 复用 `*.dreamsearch.top`；
+- Advanced：`client_max_body_size 128m; proxy_read_timeout 300s; proxy_send_timeout 300s;`
+- 最终访问：`https://filament.dreamsearch.top`
+
+完整字段、验收命令和排错见 **[NPM_GATEWAY.md](NPM_GATEWAY.md)**。
+
+> 注意：NPM 是桥接容器，转发目标要写 NAS 的**局域网 IP**，不要写 `127.0.0.1`（会 502）。
